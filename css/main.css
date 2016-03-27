@@ -1,3 +1,4 @@
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -20,6 +21,8 @@ html {
 
 article {
   max-width: 43em;
+  margin: 0.5em;
+  font-size: 100%
 }
 
 article h1 {
@@ -32,6 +35,7 @@ article header {
 
 article header p {
   font-style: italic;
+  font-family: "Crimson Text";
 }
 
 article > p:last-child {
@@ -42,11 +46,67 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin: 0;
 }
 
 .quote {
   color: #999;
 }
 
-@media only screen and (min-width: 25em) {
-  
+article ol {
+  margin: 0;
+  padding: 16px;
+}
+
+@media only screen and (min-width: 20em) {
+  article > p:last-child {
+    padding-bottom: 2em;
+    padding-top: 0;
+  }
+
+  article h1 {
+    margin-bottom: 0;
+  }
+
+  article header p {
+    margin-top: .5em;
+    margin-top: 0;
+  }
+  article p {
+    font-family: "Crimson Text";
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  article p {
+    font-size: 110%;
+    font-family: "Crimson Text";
+  }
+
+  article blockquote {
+    padding: 1.5em;
+    margin: auto;
+  }
+
+  article blockquote p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  article p {
+    font-size: 120%;
+  }
+
+  article {
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+  article p {
+    font-size: 130%;
+    font-family: "Crimson Text";
+  }
+}
