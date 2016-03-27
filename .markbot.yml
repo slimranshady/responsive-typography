@@ -25,7 +25,6 @@ css:
       - ['article header']
       - ['article h1']
       - ['article header p']
-      - ['article p']
       - ['article ol']
       - ['blockquote']
       - ['.quote']
@@ -42,8 +41,6 @@ css:
       - '110%'
       - '120%'
       - '130%'
-      - '1\.3'
-      - '1\.4'
       - '1\.5'
       - 'Crimson Text'
     search_not:
@@ -52,7 +49,3 @@ css:
       - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
       - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
       - ['float:', 'Float isn’t needed to accomplish this assignment']
-
-screenshots:
-  - path: "index.html"
-    sizes: [320, 400, 650, 980, 1400]
